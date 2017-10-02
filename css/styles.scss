@@ -1,0 +1,78 @@
+$lt-grey: #ddd;
+$background-dark: #b366ff;
+$background-light: #9575cd;
+$background-pale: #d1c4e9;
+
+@mixin zero-margin($pad-up-down, $pad-left-right){
+  margin: 30px 0px 0px 0px;
+  padding: $pad-up-down $pad-left-right;
+}
+
+.navbar-inverse {
+  background-color: #b366ff; }
+
+/*body{*/
+/*background: url("../img/festival.jpg") floralwhite;*/
+/*}*/
+.parallax {
+  /* The image used */
+  background-image: url("../img/festival.jpg");
+
+
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#loginModal1{
+  .modal-header {
+    background: $background-dark;
+    h5{
+      color:floralwhite;
+    }
+    .close{
+      color:floralwhite;
+    }
+  }
+  .modal-body{
+    background: $background-pale;
+  }
+  .modal-footer{
+    background: $background-light;
+  }
+}
+
+#loginModal2{
+  .modal-header {
+    background: $background-dark;
+    h5{
+      color:floralwhite;
+    }
+    .close{
+      color:floralwhite;
+    }
+  }
+  .modal-body{
+    background: $background-pale;
+  }
+  .modal-footer{
+    background: $background-light;
+  }
+}
+
+.jumbotron {
+  @include zero-margin(70px, 30px);
+  background: $background-light;
+  color: floralwhite;
+}
+
+.footer{
+  background-color: $background-pale;
+  padding: 10px 0px 0px 0px;
+}
